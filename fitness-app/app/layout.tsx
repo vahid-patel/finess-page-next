@@ -1,20 +1,21 @@
-import type { Metadata } from "next";
-import { Inter, Oswald } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Inter, Oswald } from 'next/font/google';
+import './globals.css';
+import { ThemeProvider } from '@/components/theme-provider';
 
 const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+  variable: '--font-inter',
+  subsets: ['latin'],
 });
 
 const oswald = Oswald({
-  variable: "--font-oswald",
-  subsets: ["latin"],
+  variable: '--font-oswald',
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-  title: "Fitness App",
-  description: "Fitness app in next js",
+  title: 'Fitness App',
+  description: 'Fitness app in next js',
 };
 
 export default function RootLayout({
@@ -23,11 +24,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.variable} ${oswald.variable} antialiased`}
-      >
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.variable} ${oswald.variable} antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

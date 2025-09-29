@@ -2,6 +2,7 @@ import { navItems } from '@/lib/constants';
 import Link from 'next/link';
 import React from 'react';
 import { Button } from './ui/button';
+import ThemeToggle from './ThemeToggle';
 
 function Navbar() {
   return (
@@ -32,6 +33,7 @@ function Navbar() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center space-x-4">
+            <ThemeToggle/>
             <Button className="font-semibold">Join Now</Button>
           </div>
         </div>

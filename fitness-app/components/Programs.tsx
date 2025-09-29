@@ -8,7 +8,7 @@ import { CardContent } from './ui/card';
 
 function Programs() {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-foreground/4">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Programs Heading Text */}
         <div className="text-center mb-16">
@@ -89,7 +89,8 @@ function Programs() {
                   <div>
                     <Button
                       variant="outline"
-                      className="w-full cursor-pointer transition-colors duration-300 group-hover:!bg-primary group-hover:!text-primary-foreground hover:!bg-primary hover:!text-primary-foreground"
+                      className="w-full cursor-pointer transition-colors dark:group-hover:bg-primary
+                      duration-300 group-hover:!bg-primary group-hover:!text-primary-foreground hover:!bg-primary hover:!text-primary-foreground"
                     >
                       Learn more
                     </Button>

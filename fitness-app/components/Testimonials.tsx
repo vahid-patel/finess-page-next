@@ -8,7 +8,7 @@ import { Star } from 'lucide-react';
 function Testimonials() {
   const MAX_STARS = 5;
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-foreground/4">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading Text */}
         <div className="text-center mb-16">

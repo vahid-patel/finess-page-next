@@ -85,7 +85,7 @@ function Pricing() {
                     className={`w-full py-3 text-lg font-semibold transition-colors duration-300 ${
                       plan.popular
                         ? 'bg-primary hover:bg-primary/90 text-primary-foreground'
-                        : 'bg-secondary hover:bg-primary text-primary-foreground'
+                        : 'bg-secondary hover:bg-primary text-primary-foreground dark:text-foreground'
                     }`}
                   >
                     {plan.cta}
