@@ -23,13 +23,21 @@ function MobileNavigation() {
             isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
           }`}
         >
-            <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t border-border dark:border-secondary/40'>
-              {navItems.map((item)=>(
-                <Link className='text-foreground hover:text-primary block px-3 py-2 font-medium' key={item.name} href={item.href}> {item.name}
-                </Link>
-              ))}
-              <div className='px-3 py-2'><Button className='w-full'>Join Now</Button></div>
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t border-border dark:border-secondary/40">
+            {navItems.map((item) => (
+              <Link
+                className="text-foreground hover:text-primary block px-3 py-2 font-medium"
+                key={item.name}
+                href={item.href}
+              >
+                {' '}
+                {item.name}
+              </Link>
+            ))}
+            <div className="px-3 py-2">
+              <Button className="w-full">Join Now</Button>
             </div>
+          </div>
         </div>
       )}
     </>
