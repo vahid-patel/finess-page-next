@@ -111,7 +111,7 @@ function Testimonials() {
                     }}
                     className="text-lg font-semibold font-heading text-foreground mb-4"
                   >
-                    "{testimonial.story}"
+                    &quot;{testimonial.story}&quot;
                   </motion.blockquote>
 
                   <motion.p
